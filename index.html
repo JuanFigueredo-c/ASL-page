@@ -1,1 +1,22 @@
-Pagina ASL
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>ASL - Animation Specification Language</title>
+</head>
+<body>
+  <h1>ASL</h1>
+  <p>Este lenguaje permite crear animaciones 2D complejas desde Haskell.</p>
+
+  <video controls width="480">
+    <source src="sources/animations/animacion_nubes.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+
+  <pre><code>
+  anim : Anim = place img (0,0) 0.5 0.5
+  anim << rotate 360 3;
+  play [anim]
+  </code></pre>
+</body>
+</html>
