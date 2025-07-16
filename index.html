@@ -7,13 +7,17 @@
 <body>
   <h1>ASL</h1>
   <p>Este lenguaje permite crear animaciones 2D complejas desde Haskell.</p>
-
-  <video controls width="480">
-    <source src="sources/animations/animacion_nubes.mp4" type="video/mp4">
-    Tu navegador no soporta el video.
-  </video>
-  <pre><code id="codigo-asl">Cargando...</code></pre>
-
+  <div class="d-flex justify-content-between row">
+  	<div class="col-auto">
+		<video controls width="480">
+    		<source src="sources/animations/animacion_nubes.mp4" type="video/mp4">
+    		Tu navegador no soporta el video.
+  		</video>
+	</div>
+  	<div class="col-auto">
+ 		 <pre><code id="codigo-asl">Cargando...</code></pre>
+	</div>
+  </div>
   <script>
     fetch('sources/code_examples/nubes.asl')
       .then(response => response.text())
