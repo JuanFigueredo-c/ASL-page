@@ -12,11 +12,17 @@
     <source src="sources/animations/animacion_nubes.mp4" type="video/mp4">
     Tu navegador no soporta el video.
   </video>
+  <pre><code id="codigo-asl">Cargando...</code></pre>
 
-  <pre><code>
-  anim : Anim = place img (0,0) 0.5 0.5
-  anim << rotate 360 3;
-  play [anim]
-  </code></pre>
+  <script>
+    fetch('sources/code_examples/nubes.asl')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('codigo-asl').textContent = text;
+      })
+      .catch(err => {
+        document.getElementById('codigo-asl').textContent = 'Error cargando archivo.';
+      });
+  </script>
 </body>
 </html>
