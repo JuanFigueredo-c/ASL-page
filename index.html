@@ -70,7 +70,9 @@
     </example-card>
     <example-card video-file="sources/animations/animacion_lambda.mp4" code-file="sources/code_examples/lambda.asl">
     </example-card>
-    <example-card video-file="sources/animations/animacion_sistema.mp4" code-file="sources/code_examples/sistema.asl">
+    <example-card video-file="sources/animations/animacion_sistema.mp4" code-file="sources/code_examples/sistema_solar.asl">
+    </example-card>
+    <example-card video-file="sources/animations/animacion_nubes.mp4" code-file="sources/code_examples/nubes.asl">
     </example-card>
   </div>
 
@@ -85,7 +87,7 @@
       },
       template: `
         <div class="example-card">
-          <video width="900" controls>
+          <video width="600" controls>
             <source :src="videoFile" type="video/mp4">   
           </video>
           <button class="btn btn-primary mt-2" @click="toggleCodigo">
