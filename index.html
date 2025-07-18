@@ -48,6 +48,10 @@
       padding: 1rem;
       border-radius: 10px;
       margin: 1rem 0;
+      display: grid;
+      justify-content: space-between;
+      width: 80vw;
+      background-color: white;
     }
     .codigo {
       background-color: #f9f9f9;
@@ -58,11 +62,15 @@
     }
   </style>
 </head>
-<body class="container p-4">
+<body class="container p-4" style="background-color: cornflowerblue;">
   <h1>ASL</h1>
   <p>Ejemplos de animaciones realizadas en ASL</p>
   <div id="app">
     <example-card video-file="sources/animations/animacion_pelota.mp4" code-file="sources/code_examples/pelota.asl">
+    </example-card>
+    <example-card video-file="sources/animations/animacion_lambda.mp4" code-file="sources/code_examples/lambda.asl">
+    </example-card>
+    <example-card video-file="sources/animations/animacion_sistema.mp4" code-file="sources/code_examples/sistema.asl">
     </example-card>
   </div>
 
@@ -77,7 +85,7 @@
       },
       template: `
         <div class="example-card">
-          <video width="300" controls>
+          <video width="60vw" controls>
             <source :src="videoFile" type="video/mp4">   
           </video>
           <button class="btn btn-primary mt-2" @click="toggleCodigo">
